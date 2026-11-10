@@ -244,4 +244,5 @@ G-Mountain/
 <div align="center">
   <b>Built with ❤️ for learners conquering their own mountains.</b><br/>
   <sub>© 2026 AI Knowledge Mountain Team</sub>
+  <sub>© MIT licence</sub>
 </div>
