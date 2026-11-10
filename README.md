@@ -48,21 +48,21 @@ Instead of a boring spreadsheet or flowchart, **AI Knowledge Mountain** converts
 
 ```mermaid
 flowchart TD
-    A[🎯 Step 1: Set Learning Goal<br/>Goal, Timeline, Level, Hours/Day] --> B[🤖 Step 2: AI Curriculum Analysis<br/>Gemini 2.5 Flash DAG Engine]
-    B --> C[⛰️ Step 3: 3D Mountain Generation<br/>Spiral Trail, Slope Biomes, Altitude Mapping]
-    C --> D[⏱️ Step 4: Countdown & Dual Climbers<br/>Avatar 'You' vs Ghost 'Pace']
+    A["🎯 Step 1: Set Learning Goal<br/>Goal, Timeline, Level, Hours/Day"] --> B["🤖 Step 2: AI Curriculum Analysis<br/>Gemini 2.5 Flash DAG Engine"]
+    B --> C["⛰️ Step 3: 3D Mountain Generation<br/>Spiral Trail, Slope Biomes, Altitude Mapping"]
+    C --> D["⏱️ Step 4: Countdown & Dual Climbers<br/>Avatar 'You' vs Ghost 'Pace'"]
     
-    D --> E{🧗 Pick Next Available Node}
-    E --> F[🧠 AI Checkpoint Test<br/>Difficulty 1-5 Assessment]
+    D --> E{"🧗 Pick Next Available Node"}
+    E --> F["🧠 AI Checkpoint Test<br/>Difficulty 1-5 Assessment"]
     
-    F -->|Pass / Struggle| G{🤖 AI Rest Decision}
-    G -->|Test Diff >= 4 OR Long Push| H[⛺ Pitch Camp & Light Campfire<br/>Timer Pauses + Rest Advice + Review]
-    G -->|Clear & Fresh| I[⛏️ Mark as Learned<br/>Gold Trail & Next Topics Unlocked]
+    F -->|Pass / Struggle| G{"🤖 AI Rest Decision"}
+    G -->|Test Diff >= 4 OR Long Push| H["⛺ Pitch Camp & Light Campfire<br/>Timer Pauses + Rest Advice + Review"]
+    G -->|Clear & Fresh| I["⛏️ Mark as Learned<br/>Gold Trail & Next Topics Unlocked"]
     
     H -->|Recharged & Ready| I
-    I --> J{Summit Reached?}
+    I --> J{"Summit Reached?"}
     J -->|Not Yet| E
-    J -->|All Topics Done| K[🏆 Summit Flag Sparkles (8,848m)<br/>Conquered with Days to Spare!]
+    J -->|All Topics Done| K["🏆 Summit Flag Sparkles - 8,848m<br/>Conquered with Days to Spare!"]
 ```
 
 ---
@@ -71,23 +71,23 @@ flowchart TD
 
 ```mermaid
 graph LR
-    subgraph Client ["Client Browser (Vite + React 19)"]
-        UI["HUD & Topic Panel<br/>(GoalForm, Hud, TopicPanel, CampPanel)"]
-        Scene["MountainScene.jsx<br/>(Three.js & React Three Fiber)"]
-        LoFi["lofi.js<br/>(Procedural Web Audio Synthesizer)"]
-        TZ["timeOfDay.js<br/>(Local Timezone & 22:00 Night Engine)"]
-        I18N["i18n.js<br/>(Instant EN / 日本語 Switch)"]
+    subgraph Client ["Client Browser - Vite + React 19"]
+        UI["HUD & Topic Panel<br/>GoalForm, Hud, TopicPanel, CampPanel"]
+        Scene["MountainScene.jsx<br/>Three.js & React Three Fiber"]
+        LoFi["lofi.js<br/>Procedural Web Audio Synthesizer"]
+        TZ["timeOfDay.js<br/>Local Timezone & 22:00 Night Engine"]
+        I18N["i18n.js<br/>Instant EN / 日本語 Switch"]
     end
 
-    subgraph Backend ["Backend / Edge (Express & Node.js)"]
-        API["Express Server (server/index.js)"]
-        Norm["normalize.js<br/>(DAG Cycle Validation & Depth Calc)"]
-        Mock["mockRoadmap.js<br/>(Zero-Config Offline Fallback)"]
+    subgraph Backend ["Backend / Edge - Express & Node.js"]
+        API["Express Server - server/index.js"]
+        Norm["normalize.js<br/>DAG Cycle Validation & Depth Calc"]
+        Mock["mockRoadmap.js<br/>Zero-Config Offline Fallback"]
     end
 
     subgraph Cloud ["Cloud & AI Infrastructure"]
-        Gemini["Google Gemini 2.5 Flash API<br/>(/api/roadmap & /api/quiz)"]
-        Hosting["Firebase Hosting CDN<br/>(g-mountain.web.app)"]
+        Gemini["Google Gemini 2.5 Flash API<br/>/api/roadmap & /api/quiz"]
+        Hosting["Firebase Hosting CDN<br/>g-mountain.web.app"]
     end
 
     Client -->|Deploy Static Bundle| Hosting
