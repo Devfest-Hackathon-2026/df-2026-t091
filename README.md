@@ -20,7 +20,7 @@
 <br/>
 
 🌐 **Live Demo:** [https://g-mountain.web.app](https://g-mountain.web.app) &nbsp;|&nbsp; 
-🌐 **Repository:** [github.com/sodhuumendsanaa-oss/G-Mountain](https://github.com/sodhuumendsanaa-oss/G-Mountain)
+🏆 **DevFest Hackathon 2026 Team Repo (t091):** [github.com/Devfest-Hackathon-2026/df-2026-t091](https://github.com/Devfest-Hackathon-2026/df-2026-t091)
 
 </div>
 

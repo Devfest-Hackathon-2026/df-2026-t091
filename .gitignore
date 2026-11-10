@@ -1,16 +1,30 @@
-# Dependency directories
-node_modules/
-
-# Production build outputs
-dist/
-dist-ssr/
-
-# Environment variables & credentials
+# 秘密情報（コミットしない）
 .env
 .env.*
 !.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
 *.pem
 *.key
+*.p12
+service-account*.json
+credentials*.json
+google-services.json
+GoogleService-Info.plist
+
+# 依存関係とビルドの成果物
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.wrangler/
+__pycache__/
+*.pyc
+.venv/
+venv/
 
 # Firebase CLI cache & logs
 .firebase/
@@ -25,8 +39,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# OS / Editor junk
+# OS とエディタ
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
+.vscode/*
+!.vscode/extensions.json
